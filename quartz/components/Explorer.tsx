@@ -1,17 +1,17 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import explorerStyle from "./styles/explorer.scss"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // @ts-ignore
-import script from "./scripts/explorer.inline"
-import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
+import { i18n } from "../i18n"
 import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
+import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
+import script from "./scripts/explorer.inline"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
   folderClickBehavior: "collapse",
-  folderDefaultState: "collapsed",
+  folderDefaultState: "open",
   useSavedState: true,
   mapFn: (node) => {
     return node
