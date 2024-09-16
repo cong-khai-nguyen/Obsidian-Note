@@ -13,7 +13,9 @@ CBC is a block cipher encryption mode that uses a chaining mechanism to add rand
 - ![[Pasted image 20240912184934.png]]
 
 ### Vulnerabilities/Main weaknesses:
-1. Padding oracle attacks:
+1. IV reuse/ predictable IV
+	- If attacker can predict IV, CBC is not CPA-secure
+2. Padding oracle attacks:
 	- CBC mode often requires padding to ensure the plaintext fits into complete blocks.
 	- If an implementation leaks information about whether decryption padding is correct or not (the "padding oracle"), an attacker can potentially decrypt the ciphertext without knowing the key.
 	- This attack works by manipulating ciphertext blocks and observing the system's response to deduce information about the plaintext.

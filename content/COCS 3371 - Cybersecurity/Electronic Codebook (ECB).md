@@ -9,7 +9,8 @@ ECB is the simplest mode of operation for block ciphers, where each block of pla
 - **Parallelizable** for both encryption and decryption
 - **Deterministic**: identical <u>plaintext blocks</u> always encrypt to identical <u>ciphertext blocks</u>
 - No chaining or feedback mechanism between blocks
-- Does not require an initialization vector (IV)
+- Does not require an [[Initialization Vector (IV)]].
+- ![[Pasted image 20240915224234.png]]
 
 ### Vulnerabilities/Main weaknesses:
 1. Pattern preservation:
