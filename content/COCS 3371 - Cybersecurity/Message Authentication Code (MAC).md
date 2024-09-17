@@ -19,7 +19,7 @@ A MAC is an algorithm which accepts a message M, a key K, and possibly some stat
 - Uses a secret key shared between sender and receiver
 - Typically produces a fixed-size output regardless of input size
 - Often used in combination with encryption for secure communication
-- ![[Pasted image 20240916192059.png]]
+- ![[Pasted image 20240916192835.png]]
 
 ### Example:
 1. Alice computes tag = MACK(M, N) and sends Bob the message (M, N, tag)
