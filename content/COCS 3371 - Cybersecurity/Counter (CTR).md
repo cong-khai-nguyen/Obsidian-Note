@@ -1,7 +1,7 @@
 ### Definition:
 CTR is a block cipher encryption mode that turns a block cipher into a stream cipher. It generates a keystream by encrypting successive values of a counter and XORing this keystream with the plaintext to produce the ciphertext.
 ### How it works:
-1. **Initialization**: A counter is initialized with a nonce - N (an arbitrary number used only once). The nonce can be a random value or an initialization vector (IV).
+1. **Initialization**: A counter is initialized with a nonce - N (an arbitrary number used only once). The nonce can be a random value or an [[Initialization Vector (IV)]].
 2. **Counter Generation**: The counter is encrypted using the block cipher(algorithm like AES) and the encryption key.
 3. **XOR with Plaintext**: The resulting encrypted block is XORed with a block of plaintext to produce a block of ciphertext.
 4. **Counter Increment**: The counter is incremented for the next block.

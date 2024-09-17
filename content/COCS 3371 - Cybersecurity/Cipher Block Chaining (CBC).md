@@ -7,6 +7,7 @@ CBC is a block cipher encryption mode that uses a chaining mechanism to add rand
 4. The result is then encrypted using the block cipher algorithm and the encryption key.
 5. The resulting ciphertext block is used in the XOR operation for the next plaintext block.
 ### Key Characteristics:
+- Used in TLS
 - Slow - No parallelism. Encryption is sequential. Each ciphertext block depends on all preceding plaintext blocks.
 - Uses an initialization vector (IV) to randomize the encryption of the first block.
 - IV and key must be known to both senders and receivers. 
@@ -15,6 +16,10 @@ CBC is a block cipher encryption mode that uses a chaining mechanism to add rand
 ### Vulnerabilities/Main weaknesses:
 1. IV reuse/ predictable IV
 	- If attacker can predict IV, CBC is not CPA-secure
+	- Ex:
+		- **Predictable IV in TLS 1.0** (use previous msg ciphertext as IV) 
+		- BEAST (Browser Exploit Against SSL/TLS)
+		- IV of new msg = last c\[i] of previous message
 2. Padding oracle attacks:
 	- CBC mode often requires padding to ensure the plaintext fits into complete blocks.
 	- If an implementation leaks information about whether decryption padding is correct or not (the "padding oracle"), an attacker can potentially decrypt the ciphertext without knowing the key.
