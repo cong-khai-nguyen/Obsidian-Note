@@ -29,4 +29,4 @@ A MAC is an algorithm which accepts a message M, a key K, and possibly some stat
 ### Vulnerabilities/Main weaknesses:
 - Shared key requirement:
     - Both parties must securely share and protect the secret key.
-    - Key management can be challenging, especially in large systems.
+- The normal model is the Adaptive Chosen-Message Attack (ACMA) model.
