@@ -7,17 +7,18 @@ Elliptic Curve Cryptography (ECC) is an approach to public-key cryptography base
 
 **Point Addition:**
 P + Q:
-s = (yP - yQ) / (xP - xQ)
-xR = s ^ 2 - (xP + xQ)
-yR = s(xP -xR) -yP
-P + Q = 0(INF) if xP = xQ
+s = (yP - yQ) / (xP - xQ)  
+xR = s ^ 2 - (xP + xQ)  
+yR = s(xP -xR) -yP  
+P + Q = 0(INF) if xP = xQ  
 
-**Point Doubling:**
-s = (3xP ^ 2 + a) / (2yP)
-xR = s^2 - 2xP
-yR = s(xP -xR) - yP
-P + P = 0 if xP = 0 (Point )
+**Point Doubling:  **
+s = (3xP ^ 2 + a) / (2yP)  
+xR = s^2 - 2xP  
+yR = s(xP -xR) - yP  
+P + P = 0 if xP = 0 (Point )  
 
+**[[Sample Questions]]**
 ### How it works:
 ![[Pasted image 20241009184838.png]]![[Pasted image 20241008193452.png]]![[Pasted image 20241009185039.png]]![[Pasted image 20241009185103.png]]![[Pasted image 20241009185152.png]]
 ![[Pasted image 20241009185318.png]]![[Pasted image 20241009190409.png]]![[Pasted image 20241008122711.png]]![[Pasted image 20241008122736.png]]
