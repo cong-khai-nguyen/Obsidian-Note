@@ -5,10 +5,18 @@ date: 2024-10-07
 ### Definition:
 Elliptic Curve Cryptography (ECC) is an approach to public-key cryptography based on elliptic curve theory that can be used as **faster**, **smaller**, and **more efficient** cryptosystems.  It is designed to create faster, smaller, and more efficient cryptosystems with equivalent security strength compared to other public-key systems like RSA but using significantly smaller key sizes.
 
+**Point Addition:**
 P + Q:
 s = (yP - yQ) / (xP - xQ)
 xR = s ^ 2 - (xP + xQ)
 yR = s(xP -xR) -yP
+P + Q = 0(INF) if xP = xQ
+
+**Point Doubling:**
+s = (3xP ^ 2 + a) / (2yP)
+xR = s^2 - 2xP
+yR = s(xP -xR) - yP
+P + P = 0 if xP = 0 (Point )
 
 ### How it works:
 ![[Pasted image 20241009184838.png]]![[Pasted image 20241008193452.png]]![[Pasted image 20241009185039.png]]![[Pasted image 20241009185103.png]]![[Pasted image 20241009185152.png]]
