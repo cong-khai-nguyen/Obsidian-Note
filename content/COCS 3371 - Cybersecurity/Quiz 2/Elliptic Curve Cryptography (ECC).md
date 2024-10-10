@@ -13,17 +13,32 @@ yR = s(xP -xR) -yP
 P + Q = 0(INF) if xP = xQ  
 
 **Point Doubling:  **
-s = (3xP ^ 2 + a) / (2yP)  
-xR = s^2 - 2xP  
-yR = s(xP -xR) - yP  
+s = (3xP ^ 2 + a) / (2yP)  % p
+xR = s^2 - 2xP   % p
+yR = s(xP -xR) - yP  % p
 P + P = 0 if xP = 0 (Point )  
 
-**[[Sample Questions]]**
+**[[Sample Questions]]**  
+
+Domain Paramaters:
+{p, a, b, G, n, h}
+
+Generator Point(G)
+p: finite field (modulo p)
+(a,b): curve parameters
+h: cofactor(ideally 1)
+n: order of G
+
+![[Pasted image 20241009212416.png]]
+![[Pasted image 20241009215752.png]]
+![[Pasted image 20241009215220.png]]
+![[Pasted image 20241009215411.png]]
+
 ### How it works:
 ![[Pasted image 20241009184838.png]]![[Pasted image 20241008193452.png]]![[Pasted image 20241009185039.png]]![[Pasted image 20241009185103.png]]![[Pasted image 20241009185152.png]]
 ![[Pasted image 20241009185318.png]]![[Pasted image 20241009190409.png]]![[Pasted image 20241008122711.png]]![[Pasted image 20241008122736.png]]
 ![[Pasted image 20241008122914.png]]
-
+![[Pasted image 20241009233343.png]]![[Pasted image 20241009233401.png]]![[Pasted image 20241009233416.png]]![[Pasted image 20241009233432.png]]![[Pasted image 20241009233503.png]]![[Pasted image 20241009233521.png]]
 #### 1. Mathematical Foundations
 
 An **elliptic curve** is represented by an equation of the form:
@@ -146,7 +161,3 @@ m = C<sub>2</sub>​−S=(10, 2) − (3, 5)=(10, 9)
 	- Efficient encryption and decryption
 	- Suitable for constrained environments (e.g., mobile devices, smart cards)
 	- Used for encryption, digital signatures, and key agreement protocols
-- Disadvantages of ECC:
-	- Complex Implementation
-	- Susceptibility to Quantum Attacks
-
