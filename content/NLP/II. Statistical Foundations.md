@@ -28,8 +28,11 @@ Hint: Recall that for *A* and *B* to be disjoint, we must have P *A* ∩ *B* = 0
 **Sol:**
 
 If A and B are disjoint, P(A ∪ B) = P(A) + P(B) = 1/3 + 3/4 = 13/12, which is impossible. More generally, if A and B are disjoint, then A ⊂ B<sup>c</sup> and P(A) ≤ P(B<sup>c</sup>). But here P(A) > P(B<sup>c</sup>), so A and B cannot be disjoint.
-### Q8: A fair dice is cast continuously until a 6 appears. What is the probability is not required. A numerical expression is sufficient.
+### Q8: A fair dice is cast continuously until a 6 appears. What is the probability that it must be cast more than 3 times? An exact value is not required. A numerical expression is sufficient.
 **Sol:**
 
-Let W and L denote the events a win (a 6 appears) and a loss (no 6 appears) = P(L) = 5/6
+Let W and L denote the events a win (a 6 appears) and a loss (no 6 appears) on a single throw of a dice. Clearly, P(W) = 1/6 and = P(L) = 5/6
 
+Sample space, S = {W, LW, LLW, LLLW, LLLLW, ... }.
+
+Now the even, E, that it must be cast more than 3 times denote the 
