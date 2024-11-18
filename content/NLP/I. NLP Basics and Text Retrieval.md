@@ -25,6 +25,7 @@ Consider the following mini corpus containing 4 documents:
 | patients          | 0      | 0      | 0      | 1      |
 | schizophrenia     | 1      | 1      | 1      | 1      |
 | treatment         | 0      | 0      | 1      | 0      |
+
  **(b)** Compute the inverted index for this mini corpus.
  
 - approach -> 3  
