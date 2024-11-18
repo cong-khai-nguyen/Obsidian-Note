@@ -4,11 +4,11 @@ date: 2024-11-17
 ---
 ### Q6: Express the probabilities of the following events in terms of P(A), P(B) and P(A ∩ B)
 
-a) either A or B or both
+##### a) either A or B or both
 
-b) either A or B but not both
+##### b) either A or B but not both
 
-c) at least one of A or B
+##### c) at least one of A or B
 
 **Sol**:
 
@@ -49,3 +49,17 @@ E = { LLLW, LLLLW, LLLLLW, ... }
 Using Bayes rule:
 
 `P(M|CB) = P(CB|M)P(M)/(P(CB|M)P(M) + P(CB|F)P(F))`
+
+### Q10: For some events A and B in a given sample space, we have P(A) > 0 and P(B) > 0
+**Justify your answer. Recall that if A and B are independent, then we have P(A ∩ B) = P(A) * P(B) and if A and B are disjoint / mutually exclusive, then P(A ∩ B) = 0**
+###### a) If A and B are mutually exclusive, can they be independent?
+**Answer:** No, A and B cannot be independent if they are mutually exclusive. 
+
+**Justification:** If A and B are mutually exclusive, it means **P(A ∩ B) = 0**. For A and B to be independent, we require: **P(A ∩ B) = P(A) × P(B)**. Since **P(A) > 0** and **P(B) > 0**, the product **P(A) × P(B) > 0**, which contradicts **P(A ∩ B) = 0**. Thus, mutually exclusive events cannot be independent.
+###### b) If A and B are independent, can they be disjoint (i.e., mutually exclusive)?
+**Answer:** No, A and B cannot be disjoint if they are independent. **Justification:** If A and B are disjoint, it means **P(A ∩ B) = 0**. For A and B to be independent, we require: **P(A ∩ B) = P(A) × P(B)**. If **P(A) > 0** and **P(B) > 0**, then **P(A) × P(B) > 0**, which contradicts **P(A ∩ B) = 0**. Therefore, independent events cannot be disjoint.
+
+
+
+
+
