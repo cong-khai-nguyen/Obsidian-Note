@@ -98,6 +98,7 @@ a) The relationship of y and x is roughly (choose one): (1) quadratic, (2) inver
 Sol: (3)
 
 b) The slop is roughly: (1) positive (2) negative (3) undefined (4) constant
+
 Sol: (2) and (4)
 
 ### Q6:  What is an inverted index, and what is it used for? What is its key advantage?
