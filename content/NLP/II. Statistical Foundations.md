@@ -29,10 +29,23 @@ Hint: Recall that for *A* and *B* to be disjoint, we must have P *A* ∩ *B* = 0
 
 If A and B are disjoint, P(A ∪ B) = P(A) + P(B) = 1/3 + 3/4 = 13/12, which is impossible. More generally, if A and B are disjoint, then A ⊂ B<sup>c</sup> and P(A) ≤ P(B<sup>c</sup>). But here P(A) > P(B<sup>c</sup>), so A and B cannot be disjoint.
 ### Q8: A fair dice is cast continuously until a 6 appears. What is the probability that it must be cast more than 3 times? An exact value is not required. A numerical expression is sufficient.
+
 **Sol:**
+Let W and L denote the events a win (a 6 appears) and a loss (no 6 appears) on a single throw of a dice. 
 
-Let W and L denote the events a win (a 6 appears) and a loss (no 6 appears) on a single throw of a dice. Clearly, P(W) = 1/6 and = P(L) = 5/6
+Clearly, P(W) = 1/6 and = P(L) = 5/6
 
-Sample space, S = {W, LW, LLW, LLLW, LLLLW, ... }.
+Sample space, S = {W, LW, LLW, LLLW, LLLLW, ... }
 
-Now the even, E, that it must be cast more than 3 times denote the 
+The event **E**, that it must be cast more than 3 times, denotes that the first three throws must result in losses (**L**), and the win (**W**) must occur on or after the 4th throw. In other words: 
+
+E = { LLLW, LLLLW, LLLLLW, ... }
+
+1 - P(E<sup>c</sup>) = 1 - P({W, LW, LLW}) = 1- P[P(W) + P(LW) + P(LLW)] = 1 - [1/6 + 5/36 + 25/216]
+
+### Q9: Suppose 5% of men and 0.25% of women in some African tribe are color blind. A random person is chosen from the tribe and was examined to be color blind. What is the probability that the person is male? Assume males and females are equal in numbers. An exact value is not required. A numerical expression is sufficient.
+**Sol**: 2381/2500
+
+Using Bayes rule:
+
+`P(M|CB) = P(CB|M)P(M)/(P(CB|M)P(M) + P(CB|F)P(F))`
