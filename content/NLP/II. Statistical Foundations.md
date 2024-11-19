@@ -60,6 +60,24 @@ Using Bayes rule:
 **Answer:** No, A and B cannot be disjoint if they are independent. **Justification:** If A and B are disjoint, it means **P(A ∩ B) = 0**. For A and B to be independent, we require: **P(A ∩ B) = P(A) × P(B)**. If **P(A) > 0** and **P(B) > 0**, then **P(A) × P(B) > 0**, which contradicts **P(A ∩ B) = 0**. Therefore, independent events cannot be disjoint.
 
 
+### Q11: Seven balls are distributed randomly into 7 baskets, i.e., each basket can get anywhere between 0 to 7 balls and the sum of all balls in each basket should be 7. We define the random variable:
+X<sub>i</sub> = The number of baskets containing exactly i balls
 
+What are the possible values for X₃? [2]
+
+**Professor's Sol**: The only possible values for X₃ = {0,1,2} as there cannot be 3 baskets containing 3 balls or in general i baskets each containing *i* balls for *i* >=3. This is because we only have 7 balls and 7 baskets.
+
+**Chat's Sol:  X<sub>3</sub>** represents the number of baskets that contain exactly 3 balls. Since the total number of balls is 7, and each basket can have anywhere between 0 to 7 balls, the possible values of **X<sub>3</sub>** depend on whether it is feasible to have baskets containing exactly 3 balls. 
+- If 1 basket contains exactly 3 balls (**X<sub>3</sub> = 1**), the remaining 4 balls must be distributed across the other baskets such that no other basket has 3 balls. 
+- If 2 baskets each contain exactly 3 balls (**X<sub>3</sub> = 2**), the remaining ball must go into another basket, with no more baskets having 3 balls. 
+- It is not possible for **X<sub>3</sub> > 2**, as 2 baskets with 3 balls already use 6 balls, leaving only 1 ball for the remaining baskets. Thus, the possible values for **X<sub>3</sub>** are: **X<sub>3</sub> ∈ {0, 1, 2}
+
+### Q12:  Write a pseudocode to simulate the categorical distribution. You are given the method/function `Math.rand()` which returns you a uniformly distributed random variable in [0,1], i.e., X = Math.rand() and X ~ Uni(0,1). [4 + 2]
+
+###### (a) Specifically, simulate a 3-way toss using Cat(3,<0.5,0,0.5>), i.e., write the method for `int SimulateCategorical(int n=3, double [] dist = {0.5, 0, 0.5})`.
+
+###### (b) Is (a) equivalent to a fair coin toss? Why or why not? In what cases does the code in (a) return 2?
+
+Sol:
 
 
