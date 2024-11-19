@@ -76,8 +76,14 @@ What are the possible values for X₃? [2]
 
 ###### (a) Specifically, simulate a 3-way toss using Cat(3,<0.5,0,0.5>), i.e., write the method for `int SimulateCategorical(int n=3, double [] dist = {0.5, 0, 0.5})`.
 
+```pseudo
+// Pseudocode for Simulating Categorical Distribution
+int SimulateCategorical(int n = 3, double[] dist = {0.5, 0, 0.5}) {
+	double x = Math.rand();
+    return (x <= 0.5) ? 1 : 3
+}
+```
 ###### (b) Is (a) equivalent to a fair coin toss? Why or why not? In what cases does the code in (a) return 2?
-
-Sol:
-
-
+This is exactly same a fair coin toss. The code in (a) should never return 2 as the probability of occurrence of 2 is 0 as defined in `(a)`
+### Q13: Recall that if X ~ Beta(α, β), then the mean value of the random variable is given by E[X] = α/(α+β). Using this result which of the following density plots (PDF) on the y-axis for different values of x, best describes the distribution Beta(α = 5, β = 0.2)? Provide a justification for your choice. [10]
+![[Pasted image 20241118182349.png]]![[Pasted image 20241118182536.png]]
