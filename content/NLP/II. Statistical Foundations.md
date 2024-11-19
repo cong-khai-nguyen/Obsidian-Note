@@ -87,3 +87,7 @@ int SimulateCategorical(int n = 3, double[] dist = {0.5, 0, 0.5}) {
 This is exactly same a fair coin toss. The code in (a) should never return 2 as the probability of occurrence of 2 is 0 as defined in `(a)`
 ### Q13: Recall that if X ~ Beta(α, β), then the mean value of the random variable is given by E[X] = α/(α+β). Using this result which of the following density plots (PDF) on the y-axis for different values of x, best describes the distribution Beta(α = 5, β = 0.2)? Provide a justification for your choice. [10]
 ![[Pasted image 20241118182349.png]]![[Pasted image 20241118182536.png]]
+
+Sol: Plot C. The mean value of the random variable X ~ Beta(α = 5, β = 0.2) is given by E[X] = 5/5.2 ≈ 0.962. Only Plot C can have a mean value so close to 1 as its value is almost 0 when x < 0.7 (i.e., places almost no mass for x < 0.7) and strictly increases for values x > 0.7 (i.e., places a higher mass for x > 0.7). Hence, its mean value should be greater than 0.7 and less than 1.
+
+Plots A and D are symmetric which imply the mean value of those Beta distributions is close to 0.5. Plot B places a much higher mass for values of x < 0.2 and an almost nil mass for values of x > 0.2, hence its mean must be less than 0.2. So only Plot C falls in an admissible range as that of Beta(α = 5, β = 0.2) as checked by its mean/expected value.
