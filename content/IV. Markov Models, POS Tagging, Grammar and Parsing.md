@@ -72,3 +72,10 @@ Usually, the parse tree with the **highest probability** among all possible tree
 2. **Bottom-up parsing:**  
    - Starts with the input sentence and tries to construct the parse tree by matching it to the grammar rules.
    - Focuses on assembling the structure from the sentence upwards.
+### Q: What is a Context Free Grammar (CFG). Define formally? How does it differ from a probabilistic CFG? State one important task that can be done by PCFGs but not by CFGs. [3 + 2 + 2=7 points]
+
+Sol. A Context Free Grammar (CFG) is a formalism/grammar for generating language. It contains a set of terminals, N (which are usually words) and non-terminals, Σ (which are usually POS tags/Chunks), and a set of rules or productions of the form A→β, where A is a non-terminal and β is a string of symbols from Σ ∪ N.
+
+A PCFG is a probabilistic version of a CFG where each production must add to 1, defining a distribution for each non-terminal. Probabilities of all productions rewriting a given non-terminal must sum to 1.
+
+PCFGs can disambiguate between multiple parse trees for a given sentence however this cannot be done directly using a CFG.
